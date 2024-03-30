@@ -52,3 +52,12 @@ function displayContactInfo(user) {
         </div>
     `;
 }
+
+
+
+
+document.querySelector('.Add-btn').addEventListener('click', function() {
+    
+    const formContainer = document.getElementById('addContactForm');
+    formContainer.style.display = 'block';
+});
