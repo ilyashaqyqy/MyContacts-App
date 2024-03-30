@@ -23,11 +23,17 @@
         }
 
 
-        .custom-btn-color {
+    .custom-btn-color {
     background-color: #000000; 
     border-color: #000000; 
     color: rgb(255, 255, 255);
  
+     }
+
+
+     .Add-btn{
+       border: none;
+        background-color: white;
      }
 
      .custom-btn-color:active {
@@ -62,6 +68,61 @@ margin: 0 auto;
 }
 
 
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 3%;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.contact-img-container {
+   
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; 
+   
+   
+}
+
+.contact-img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-info {
+    padding: 20px;
+    margin-left: 10%;
+}
+
+.card-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 5px;
+}
+
+
+
+
+#addContactForm{
+
+    margin-top: 10%;
+}
+
+
+
         @media only screen and (max-width: 768px) {
         .col-sm-7{
          
@@ -79,10 +140,6 @@ margin: 0 auto;
                 width: 100%;
             }
 
-            .custom-card{
-
-                width: 103%;
-            }
         }
     </style>
 </head>
@@ -106,186 +163,112 @@ margin: 0 auto;
 
        
         
-            <!-- First column: col-5 -->
-            <div class="row mt-1">
-                <!-- First column: col-sm-5 -->
-                <div class="col-sm-5 ">
-                    
-                    <!-- Add an ID to the container where contact cards will be appended -->
-
-
-                    <div class="custom-card shadow" style="margin-left: 6px; padding-top: 2vh; padding-bottom: 40vh; overflow-y: auto; height: 100vh;">
-                        <div class="card-body">
-
-                            <div class="row mb-4 mt-0 " style="width: 160%; margin-left: 0%;">
-                                <div class="col-6">
-                                    <div class=" input-group mt-4">
-                                        <input type="search" class="form-control rounded"  aria-label="Search" aria-describedby="search-addon" />
-                                        <button type="button" class="btn custom-btn-color" data-mdb-ripple-init>Search</button>
-                                    </div>
-                                </div>
-                                <div class="col-3" style="width: 10%; margin-left: -3%;">
-                                    <div class="input-group">
-                                        <button class="btn  w-100 mt-4" type="button" style="border: none;">
-                                            <img src="/images/icons8-plus-50.png" alt="Add" style="width: 30px; height: 30px;">
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="col-3" style="width: 10%; margin-left: -5%;">
-                                    <div class="input-group">
-                                        <button class="btn  w-100 mt-4" type="button" style="border: none; ">
-                                            <img src="/images/icons8-menu-vertical-50.png" alt="Add" style="width: 30px; height: 30px;">
-                                          
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            
-                            
-
-                            <!-- Contact 1 -->
-                            <div class="contact mb-3">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="/images/Ellipse 10.png" alt="Profile" class="rounded-circle" style="width: 70px; height: 70px;">
-                                    </div>
-                                    <div class="col-md-10 col-12 py-0">
-                                        <!-- Title for mobile devices -->
-                                        <h5 class="card-title d-lg-none" style="max-width: 100%; margin-left: 20px; margin-top: 20px; color: #2A2A2A;">title</h5>
-                                        <!-- Title for desktop devices -->
-                                        <h5 class="card-title d-none d-lg-block" style="max-width: 100%; margin-left: 20px; color: #2A2A2A"> title</h5>
-            
-                                        <!-- Text for mobile devices -->
-                                        <p class="card-text d-lg-none" style="max-width: 100%; margin-left: 20px ; color: #2A2A2A">With supporting text below as a natural lead-in to additional content on mobile devices.</p>
-                                        <!-- Text for desktop devices -->
-                                        <p class="card-text d-none d-lg-block" style="max-width: 100%; margin-left: 20px; color: #2A2A2A">With supporting text below as a natural lead-in to additional content on larger devices.</p>
-                                    </div>
-                                </div>
-                            </div>
-            
-                            <!-- Contact 2 -->
-                            <div class="contact mb-3">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="/images/Ellipse 10.png" alt="Profile" class="rounded-circle" style="width: 70px; height: 70px;">
-                                    </div>
-                                    <div class="col-md-10 col-12 py-0">
-                                        <!-- Title for mobile devices -->
-                                        <h5 class="card-title d-lg-none" style="max-width: 100%; margin-left: 20px; margin-top: 20px; color: #2A2A2A">title</h5>
-                                        <!-- Title for desktop devices -->
-                                        <h5 class="card-title d-none d-lg-block" style="max-width: 100%; margin-left: 20px; color: #2A2A2A"> title</h5>
-            
-                                        <!-- Text for mobile devices -->
-                                        <p class="card-text d-lg-none" style="max-width: 80%; margin-left: 20px; color: #2A2A2A">With supporting text below as a natural lead-in to additional content on mobile devices.</p>
-                                        <!-- Text for desktop devices -->
-                                        <p class="card-text d-none d-lg-block" style="max-width: 100%; margin-left: 20px; color: #2A2A2A">With supporting text below as a natural lead-in to additional content on larger devices.</p>
-                                    </div>
-                                </div>
-                            </div>
-            
-                                                        <!-- Contact 3 -->
-                                                        <div class="contact mb-3">
-                                                            <div class="row">
-                                                                <div class="col-2">
-                                                                    <img src="/images/Ellipse 10.png"" alt="Profile" class="rounded-circle" style="width: 70px; height: 70px;">
-                                                                </div>
-                                                                <div class="col-md-10 col-12 py-0">
-                                                                    <!-- Title for mobile devices -->
-                                                                    <h5 class="card-title d-lg-none" style="max-width: 100%; margin-left: 20px; margin-top: 20px; color: #2A2A2A">title</h5>
-                                                                    <!-- Title for desktop devices -->
-                                                                    <h5 class="card-title d-none d-lg-block" style="max-width: 100%; margin-left: 20px; color: #2A2A2A"> title</h5>
-                                        
-                                                                    <!-- Text for mobile devices -->
-                                                                    <p class="card-text d-lg-none" style="max-width: 80%; margin-left: 20px; color: #2A2A2A">With supporting text below as a natural lead-in to additional content on mobile devices.</p>
-                                                                    <!-- Text for desktop devices -->
-                                                                    <p class="card-text d-none d-lg-block" style="max-width: 100%; margin-left: 20px; color: #2A2A2A">With supporting text below as a natural lead-in to additional content on larger devices.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-            
-                            <!-- Contact 4 -->
-                            <div class="contact mb-3">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="/images/Ellipse 10.png"" alt="Profile" class="rounded-circle" style="width: 70px; height: 70px;">
-                                    </div>
-                                    <div class="col-md-10 col-12 py-0">
-                                        <!-- Title for mobile devices -->
-                                        <h5 class="card-title d-lg-none" style="max-width: 100%; margin-left: 20px; margin-top: 20px; color: #2A2A2A">title</h5>
-                                        <!-- Title for desktop devices -->
-                                        <h5 class="card-title d-none d-lg-block" style="max-width: 100%; margin-left: 20px; color: #2A2A2A"> title</h5>
-            
-                                        <!-- Text for mobile devices -->
-                                        <p class="card-text d-lg-none" style="max-width: 80%; margin-left: 20px; color: #2A2A2A">With supporting text below as a natural lead-in to additional content on mobile devices.</p>
-                                        <!-- Text for desktop devices -->
-                                        <p class="card-text d-none d-lg-block" style="max-width: 100%; margin-left: 20px; color: #2A2A2A">With supporting text below as a natural lead-in to additional content on larger devices.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                                
-                             <!-- Contact 5 -->
-                            <div class="contact mb-3">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="/images/Ellipse 10.png" alt="Profile" class="rounded-circle" style="width: 70px; height: 70px;">
-                                    </div>
-                                    <div class="col-md-10 col-12 py-0">
-                                        <!-- Title for mobile devices -->
-                                        <h5 class="card-title d-lg-none" style="max-width: 100%; margin-left: 20px; margin-top: 20px; color: #2A2A2A">title</h5>
-                                        <!-- Title for desktop devices -->
-                                        <h5 class="card-title d-none d-lg-block" style="max-width: 100%; margin-left: 20px; color: #2A2A2A"> title</h5>
-            
-                                        <!-- Text for mobile devices -->
-                                        <p class="card-text d-lg-none" style="max-width: 80%; margin-left: 20px; color: #2A2A2A">With supporting text below as a natural lead-in to additional content on mobile devices.</p>
-                                        <!-- Text for desktop devices -->
-                                        <p class="card-text d-none d-lg-block" style="max-width: 100%; margin-left: 20px; color: #2A2A2A">With supporting text below as a natural lead-in to additional content on larger devices.</p>
-                                    </div>
-                                </div>
-                            </div>                        
-
-                            <!-- Contact 6 -->
-                            <div class="contact mb-3">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="/images/Ellipse 10.png" alt="Profile" class="rounded-circle" style="width: 70px; height: 70px;">
-                                    </div>
-                                    <div class="col-md-10 col-12 py-0">
-                                        <!-- Title for mobile devices -->
-                                        <h5 class="card-title d-lg-none" style="max-width: 100%; margin-left: 20px; margin-top: 20px;color: #2A2A2A">title</h5>
-                                        <!-- Title for desktop devices -->
-                                        <h5 class="card-title d-none d-lg-block" style="max-width: 100%; margin-left: 20px; color: #2A2A2A"> title</h5>
-            
-                                        <!-- Text for mobile devices -->
-                                        <p class="card-text d-lg-none" style="max-width: 80%; margin-left: 20px; color: #2A2A2A">With supporting text below as a natural lead-in to additional content on mobile devices.</p>
-                                        <!-- Text for desktop devices -->
-                                        <p class="card-text d-none d-lg-block" style="max-width: 100%; margin-left: 20px; color: #2A2A2A">With supporting text below as a natural lead-in to additional content on larger devices.</p>
-                                    </div>
-                                </div>
-                            </div>
+<!-- First column: col-5 -->
+<div class="row mt-1">
+    <!-- First column: col-sm-5 -->
+    <div class="col-sm-5 ">
+        
 
 
 
+    <div class="custom-card shadow" style="margin-left: 6px; padding-top: 2vh; padding-bottom: 40vh; overflow-y: auto; height: 100vh;">
+            <div class="card-body">
 
-
-
+                <div class="row mb-4 mt-0 " style="width: 160%; margin-left: 0%;">
+                    <div class="col-6">
+                        <div class=" input-group mt-4">
+                            <input type="search" class="form-control rounded"  aria-label="Search" aria-describedby="search-addon" />
+                            <button type="button" class="btn custom-btn-color" data-mdb-ripple-init>Search</button>
                         </div>
                     </div>
-                    
+                    <div class="col-3" style="width: 10%; margin-left: -3%;">
+                        <div class="input-group">
+                            <button class="Add-btn  w-100 mt-4" type="button" style="border: none;">
+                                <img src="/images/icons8-plus-50.png" alt="Add" style="width: 30px; height: 30px;">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-3" style="width: 10%; margin-left: -5%;">
+                        <div class="input-group">
+                            <button class="btn  w-100 mt-4" type="button" style="border: none; ">
+                                <img src="/images/icons8-menu-vertical-50.png" alt="Add" style="width: 30px; height: 30px; margin-top: -10px;">
+                                
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 
-
-
-                <!-- Second column: col-sm-7 -->
-                <div class="col-sm-7">
-                    
-
-
-
+                
+                
+                <div id="contactsContainer" class="mb-3">
+                    <!-- Contacts will be dynamically inserted here -->
                 </div>
+
+    
+
+
+
+
+
             </div>
+        </div>
+        
+    </div>
+    
+
+
+    <!-- Second column: col-sm-7 -->
+    <div class="col-sm-7">
+        
+
+
+
+
+           
+        
+            <form id="addContactForm" class="custom-form" style="overflow-y: auto; height: 100vh; display: none;">
+                
+                <div class="form-group mb-4">
+                    <label for="contactName">Nom:</label>
+                    <input type="text" class="form-control" id="contactName" required>
+                </div>
+            
+                <div class="form-group mb-4">
+                    <label for="contactPhone">Numéro de Téléphone:</label>
+                    <input type="tel" class="form-control" id="contactPhone" pattern="(05|06|07)[0-9]{8}" required>
+                    <small class="text-muted">Le numéro de téléphone doit commencer par 05, 06 ou 07 et contenir un total de 10 chiffres.</small>
+                </div>
+            
+               
+                <div class="form-group mb-4">
+                    <label for="contactEmail">Adresse E-mail:</label>
+                    <input type="email" class="form-control" id="contactEmail" required>
+                </div>
+            
+               
+                <div class="form-group mb-4">
+                    <label for="contactPictureURL">URL de l'Image:</label>
+                    <input type="url" class="form-control" id="contactPictureURL" required>
+                </div>
+            
+              
+                <button type="submit" class="btn btn-primary btn-block mb-4 center-button custom-btn-color">Enregistrer</button>
+           
+
+<div id="saveMessage" class="alert alert-success" style="display: none;" role="alert">
+    Le contact a été ajouté avec succès.
+</div>
+
+
+           
+            </form>
+            
+        
+        
+        
+
+    </div>
+</div>
             
 
 
